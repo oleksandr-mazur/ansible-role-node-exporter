@@ -1,0 +1,10 @@
+[Unit]
+Description=Prometheus node exporter
+
+[Service]
+User=node_exporter
+Group=node_exporter
+ExecStart=/usr/sbin/node_exporter --collector.systemd
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,16 @@
+---
+
+- name: daemon-reload
+  systemd: daemon_reload=yes
+
+- name: start node_exporter.service
+  systemd:
+    name: node_exporter.service
+    state: started
+    daemon_reload: yes
+
+- name: restart node_exporter.service
+  systemd:
+    name: node_exporter.service
+    state: restarted
+    daemon_reload: yes
