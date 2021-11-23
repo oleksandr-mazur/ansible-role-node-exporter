@@ -10,7 +10,7 @@ Add to requirements.yml
 
 ```
 - name: node-exporter
-  src: https://github.com/oleksandr-mazur/ansible-role-users
+  src: https://github.com/oleksandr-mazur/ansible-role-node-exporter
   version: master
 ```
 
